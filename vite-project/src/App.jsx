@@ -1,4 +1,4 @@
-import Hero from './components/HeroSection'
+import Landing from './components/Landing'
 import Navbar from './components/Navbar'
 import About from './components/About'
 import Projects from './components/Projects'
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Box>
-        <Hero/>
+        <Landing/>
         <Navbar/>
         <About/>
         <Projects/>

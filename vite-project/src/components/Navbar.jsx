@@ -11,7 +11,7 @@ import {
   } from '@chakra-ui/react'
   import { FiMenu } from 'react-icons/fi'
   //import { Logo } from './Logo'
-  import Photo from '../assets/react.svg'
+  import Photo from '../assets/icon.png'
 
   export default function App () {
     const isDesktop = useBreakpointValue({
@@ -23,20 +23,20 @@ import {
       <Box
         as="section"
         pb={{
-          base: '12',
-          md: '24',
         }}
       >
         <Box boxShadow="sm"
             py={{
-              lg: '5',
-            }} px={{sm:'10'}}>
+              lg:'5',
+              sm:'3'
+            }}
+            px={{sm:'10'}}>
             <Flex>
-              <img src={Photo} />
+              <img src={Photo} width='50px'/>
               <Spacer/>
               {isDesktop ? (
                   <ButtonGroup variant="link" spacing="8">
-
+                    <Button key='About'>Home</Button>
                     <Button key='About'>About</Button>
                     <Button key='About'>Portfolio</Button>
                     <Button key='About'>Contact</Button>
