@@ -10,6 +10,7 @@ import {
   HStack,
 } from '@chakra-ui/react';
 import { BsArrowUpRight } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 export default function PostWithLike(props) {
   return (
@@ -61,7 +62,9 @@ export default function PostWithLike(props) {
             cursor={'pointer'}
             w="full">
             <Text fontSize={'md'} fontWeight={'semibold'}>
-              View more
+              <Link to={props.link}>
+                Learn more
+              </Link>
             </Text>
             <BsArrowUpRight />
           </Flex>

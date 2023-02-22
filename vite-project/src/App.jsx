@@ -7,6 +7,7 @@ import { Box } from '@chakra-ui/react'
 import { useState, useEffect } from 'react'
 import ReactLoading from "react-loading";
 import { Flex } from '@chakra-ui/react'
+import {Routes, Route} from 'react-router-dom';
 
 function App() {
   const [done, setDone] = useState(undefined);
@@ -35,13 +36,65 @@ function App() {
       </Flex>
 
     ) : (
-      <Box>
-        <Landing/>
-        <Navbar/>
-        <About/>
-        <Projects/>
-        <Footer/>
-      </Box>
+      <Routes>
+        <Route path="/" element={
+          <Box>
+                <Landing/>
+                <Navbar/>
+                <About/>
+                <Projects/>
+                <Footer/>
+          </Box>
+        }/>
+
+        <Route path="/about" element={
+          <Box>
+            <Navbar/>
+              <p>About</p>
+            <Footer/>
+          </Box>
+        }/>
+
+        <Route path="/portfolio" element={
+          <Box>
+            <Navbar/>
+              <p>Portfolio</p>
+            <Footer/>
+          </Box>
+        }/>
+
+        <Route path="/contact" element={
+          <Box>
+            <Navbar/>
+              <p>Contact</p>
+            <Footer/>
+          </Box>
+        }/>
+
+      <Route path="/cafe-stile" element={
+          <Box>
+            <Navbar/>
+              <p>Café Stile</p>
+            <Footer/>
+          </Box>
+        }/>
+
+      <Route path="/digicache" element={
+          <Box>
+            <Navbar/>
+              <p>Digicache</p>
+            <Footer/>
+          </Box>
+        }/>
+
+      <Route path="/little-lemon" element={
+          <Box>
+            <Navbar/>
+              <p>Little Lemon</p>
+            <Footer/>
+          </Box>
+        }/>
+      </Routes>
     )}
     </div>
   );

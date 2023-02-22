@@ -1,8 +1,7 @@
 import { Box, Divider, Text } from "@chakra-ui/react"
 import { Flex } from "@chakra-ui/react";
-import { ButtonGroup, Container, IconButton, Stack } from '@chakra-ui/react';
+import { ButtonGroup, IconButton } from '@chakra-ui/react';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
-import { Card, CardBody,  } from '@chakra-ui/react'
 function Hero() {
     return (
         <Box

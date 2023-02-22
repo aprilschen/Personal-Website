@@ -1,4 +1,5 @@
 import { Box, Flex, Heading, Icon, Link, Text } from "@chakra-ui/react";
+import { Link as OneTimeLink} from "react-router-dom";
 import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 
@@ -26,7 +27,9 @@ export default function About() {
       </Box>
 
       <Link color="blue.800">
-        Learn more
+        <OneTimeLink to='/about'>
+            Learn more
+        </OneTimeLink>
         <Icon as={FiArrowUpRight} ml="10px" h={5} w={5} />
       </Link>
     </Flex>

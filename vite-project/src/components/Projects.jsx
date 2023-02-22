@@ -17,6 +17,7 @@ function Projects() {
                     title={"Café Stile"}
                     description={"Marketplace Web App"}
                     image={"https://raw.githubusercontent.com/aprilschen/Cafe-Stile/main/assets/demo1.png"}
+                    link={"/cafe-stile"}
                     />
                 </WrapItem>
 
@@ -25,6 +26,7 @@ function Projects() {
                     title={"Digicache"}
                     description={"Single page Geotagging App"}
                     image={"https://raw.githubusercontent.com/aprilschen/Digicache/main/assets/demo1.png"}
+                    link={"/digicache"}
                     />
                 </WrapItem>
 
@@ -33,6 +35,7 @@ function Projects() {
                     title={"Little Lemon Website"}
                     description={"Restaurant Website"}
                     image={"https://raw.githubusercontent.com/aprilschen/Little-Lemon-Website/main/assets/readme-image1.png"}
+                    link={"/little-lemon"}
                     />
                 </WrapItem>
             </Wrap>
