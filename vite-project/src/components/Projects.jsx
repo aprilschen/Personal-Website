@@ -7,21 +7,33 @@ function Projects() {
     return (
         <Box
         mx='40px'
-        my='150px'>
+        mb='40px'>
             <Text>
                 Projects
             </Text>
             <Wrap justify={'center'}>
                 <WrapItem>
-                    <PortfolioCard/>
+                    <PortfolioCard
+                    title={"Café Stile"}
+                    description={"Marketplace Web App"}
+                    image={"https://raw.githubusercontent.com/aprilschen/Cafe-Stile/main/assets/demo1.png"}
+                    />
                 </WrapItem>
 
                 <WrapItem>
-                    <PortfolioCard/>
+                    <PortfolioCard
+                    title={"Digicache"}
+                    description={"Single page Geotagging App"}
+                    image={"https://raw.githubusercontent.com/aprilschen/Digicache/main/assets/demo1.png"}
+                    />
                 </WrapItem>
 
                 <WrapItem>
-                    <PortfolioCard/>
+                    <PortfolioCard
+                    title={"Little Lemon Website"}
+                    description={"Restaurant Website"}
+                    image={"https://raw.githubusercontent.com/aprilschen/Little-Lemon-Website/main/assets/readme-image1.png"}
+                    />
                 </WrapItem>
             </Wrap>
         </Box>

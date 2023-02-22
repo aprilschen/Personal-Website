@@ -9,11 +9,9 @@ import {
   useColorModeValue,
   HStack,
 } from '@chakra-ui/react';
-import { BsArrowUpRight, BsHeartFill, BsHeart } from 'react-icons/bs';
+import { BsArrowUpRight } from 'react-icons/bs';
 
-export default function PostWithLike() {
-  const [liked, setLiked] = useState(false);
-
+export default function PostWithLike(props) {
   return (
       <Box
         w="xs"
@@ -27,9 +25,7 @@ export default function PostWithLike() {
         boxShadow={useColorModeValue('6px 6px 0 black', '6px 6px 0 cyan')}>
         <Box h={'200px'} borderBottom={'1px'} borderColor="black">
           <Img
-            src={
-              'https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
-            }
+            src={props.image}
             roundedTop={'sm'}
             objectFit="cover"
             h="full"
@@ -50,11 +46,10 @@ export default function PostWithLike() {
             </Text>
           </Box>
           <Heading color={'black'} fontSize={'2xl'} noOfLines={1}>
-            React v18.0
+            {props.title}
           </Heading>
           <Text color={'gray.500'} noOfLines={2}>
-            In this post, we will give an overview of what is new in React 18,
-            and what it means for the future.
+            {props.description}
           </Text>
         </Box>
         <HStack borderTop={'1px'} color="black">
