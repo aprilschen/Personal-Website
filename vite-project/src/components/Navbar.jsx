@@ -36,10 +36,10 @@ import {
               <Spacer/>
               {isDesktop ? (
                   <ButtonGroup variant="link" spacing="8">
-                    <Button key='About'>Home</Button>
+                    <Button key='Home'>Home</Button>
                     <Button key='About'>About</Button>
-                    <Button key='About'>Portfolio</Button>
-                    <Button key='About'>Contact</Button>
+                    <Button key='Portfolio'>Portfolio</Button>
+                    <Button key='Contact'>Contact</Button>
 
                   </ButtonGroup>
               ) : (

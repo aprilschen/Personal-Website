@@ -24,7 +24,8 @@ function App() {
   return (
     <div className="App">
     {!done ? (
-      <Flex minHeight={'100vh'} justify={'center'} align={'center'}>
+      <Flex minHeight={'100vh'} justify={'center'} align={'center'}
+      bg="brand.100">
         <ReactLoading
         type={"cubes"}
         color={"#FC6AAF"}
