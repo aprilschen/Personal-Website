@@ -8,10 +8,10 @@ function Projects() {
         <Box
         mx='40px'
         mb='40px'>
-            <Text>
+            <Text fontSize='5xl' textAlign={'center'} mb={4}>
                 Projects
             </Text>
-            <Wrap justify={'center'}>
+            <Wrap justify={'space-evenly'}>
                 <WrapItem>
                     <PortfolioCard
                     title={"Café Stile"}

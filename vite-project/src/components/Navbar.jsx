@@ -31,25 +31,28 @@ import {
               sm:'3'
             }}
             px={{sm:'10'}}>
-            <Flex>
-              <img src={Photo} width='50px'/>
-              <Spacer/>
               {isDesktop ? (
-                  <ButtonGroup variant="link" spacing="8">
-                    <Button key='Home'>Home</Button>
-                    <Button key='About'>About</Button>
-                    <Button key='Portfolio'>Portfolio</Button>
-                    <Button key='Contact'>Contact</Button>
-
-                  </ButtonGroup>
+                    <Flex>
+                        <img src={Photo} width='50px'/>
+                        <Spacer/>
+                        <ButtonGroup variant="link" spacing="12">
+                            <Button key='Home'>Home</Button>
+                            <Button key='About'>About</Button>
+                            <Button key='Portfolio'>Portfolio</Button>
+                            <Button key='Contact'>Contact</Button>
+                        </ButtonGroup>
+                    </Flex>
               ) : (
-                <IconButton
-                  variant="ghost"
-                  icon={<FiMenu fontSize="1.25rem" />}
-                  aria-label="Open Menu"
-                />
+                <Flex justify={'space-evenly'} mx={'40px'}>
+                    <ButtonGroup variant="link" spacing='15vw'>
+                        <Button key='Home'>Home</Button>
+                        <Button key='About'>About</Button>
+                        <Button key='Portfolio'>Portfolio</Button>
+                        <Button key='Contact'>Contact</Button>
+                    </ButtonGroup>
+                </Flex>
+
               )}
-            </Flex>
         </Box>
       </Box>
     )
