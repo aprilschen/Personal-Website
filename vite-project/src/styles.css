@@ -7,7 +7,7 @@
     height: 100vh;
     background-color: #FFE2C4;
     animation-name: loadingScreen;
-    animation-delay: 3s;
+    animation-delay: 1.33s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.73, 0.03, 0.87, 0.7)
