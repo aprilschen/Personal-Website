@@ -8,7 +8,9 @@ function Hero() {
             minHeight={'100vh'}
             bg="brand.100"
             justify='center'
-            align='center'>
+            align='center'
+
+            >
             <Flex
             justify='center'
             align='flex-end'
