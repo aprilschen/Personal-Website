@@ -9,6 +9,13 @@ import ReactLoading from "react-loading";
 import { Flex } from '@chakra-ui/react'
 import {Routes, Route} from 'react-router-dom';
 
+import AboutPage from './components/pages/About';
+import Contact from './components/pages/Contact';
+import Portfolio from './components/pages/Portfolio';
+import CafeStile from './components/pages/CafeStile';
+import Digicache from './components/pages/Digicache';
+import LittleLemon from './components/pages/LittleLemon';
+
 function App() {
   const [done, setDone] = useState(undefined);
 
@@ -39,8 +46,8 @@ function App() {
       <Routes>
         <Route path="/" element={
           <Box>
-                <Landing/>
                 <Navbar/>
+                <Landing/>
                 <About/>
                 <Projects/>
                 <Footer/>
@@ -50,7 +57,7 @@ function App() {
         <Route path="/about" element={
           <Box>
             <Navbar/>
-              <p>About</p>
+              <AboutPage />
             <Footer/>
           </Box>
         }/>
@@ -58,7 +65,7 @@ function App() {
         <Route path="/portfolio" element={
           <Box>
             <Navbar/>
-              <p>Portfolio</p>
+              <Portfolio />
             <Footer/>
           </Box>
         }/>
@@ -66,7 +73,7 @@ function App() {
         <Route path="/contact" element={
           <Box>
             <Navbar/>
-              <p>Contact</p>
+              <Contact />
             <Footer/>
           </Box>
         }/>
@@ -74,7 +81,7 @@ function App() {
       <Route path="/cafe-stile" element={
           <Box>
             <Navbar/>
-              <p>Café Stile</p>
+              <CafeStile/>
             <Footer/>
           </Box>
         }/>
@@ -82,7 +89,7 @@ function App() {
       <Route path="/digicache" element={
           <Box>
             <Navbar/>
-              <p>Digicache</p>
+              <Digicache/>
             <Footer/>
           </Box>
         }/>
@@ -90,7 +97,7 @@ function App() {
       <Route path="/little-lemon" element={
           <Box>
             <Navbar/>
-              <p>Little Lemon</p>
+              <LittleLemon/>
             <Footer/>
           </Box>
         }/>

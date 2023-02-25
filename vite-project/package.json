@@ -18,7 +18,8 @@
     "react-icons": "^4.7.1",
     "react-loading": "^2.0.3",
     "react-lottie": "^1.2.3",
-    "react-router-dom": "^6.8.1"
+    "react-router-dom": "^6.8.1",
+    "sass": "^1.58.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

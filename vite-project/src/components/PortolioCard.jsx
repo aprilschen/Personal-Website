@@ -43,7 +43,7 @@ export default function PostWithLike(props) {
             color="white"
             mb={2}>
             <Text fontSize={'xs'} fontWeight="medium">
-              React
+              {props.date}
             </Text>
           </Box>
           <Heading color={'black'} fontSize={'2xl'} noOfLines={1}>

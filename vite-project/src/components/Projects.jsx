@@ -1,7 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
 import PortfolioCard from './PortolioCard'
-import { Flex } from "@chakra-ui/react";
 import { Wrap, WrapItem } from '@chakra-ui/react'
 function Projects() {
     return (
@@ -18,6 +17,7 @@ function Projects() {
                     description={"Marketplace Web App"}
                     image={"https://raw.githubusercontent.com/aprilschen/Cafe-Stile/main/assets/demo1.png"}
                     link={"/cafe-stile"}
+                    date={"Feb 2023"}
                     />
                 </WrapItem>
 
@@ -27,6 +27,7 @@ function Projects() {
                     description={"Single page Geotagging App"}
                     image={"https://raw.githubusercontent.com/aprilschen/Digicache/main/assets/demo1.png"}
                     link={"/digicache"}
+                    date={"Jan 2023"}
                     />
                 </WrapItem>
 
@@ -36,6 +37,7 @@ function Projects() {
                     description={"Restaurant Website"}
                     image={"https://raw.githubusercontent.com/aprilschen/Little-Lemon-Website/main/assets/readme-image1.png"}
                     link={"/little-lemon"}
+                    date={"Nov 2022"}
                     />
                 </WrapItem>
             </Wrap>

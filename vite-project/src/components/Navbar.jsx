@@ -7,7 +7,8 @@ import {
     Spacer,
     HStack,
     IconButton,
-    useBreakpointValue
+    useBreakpointValue,
+    Divider
   } from '@chakra-ui/react'
   //import { Logo } from './Logo'
   import Photo from '../assets/icon.png';
@@ -20,19 +21,14 @@ import {
     })
 
     return (
-      <Box
-        as="section"
-        pb={{
-        }}
-      >
-        <Box boxShadow="sm"
-            py={{
-              lg:'5',
-              sm:'3'
-            }}
-            px={{sm:'10'}}>
+        <Box boxShadow="md"
+            minWidth={'100vw'}
+            bg={"brand.100"}
+            style={{position: 'fixed'}}
+            py={'3'}
+            px={'10'}>
               {isDesktop ? (
-                    <Flex>
+                    <Flex >
                         <img src={Photo} width='50px'/>
                         <Spacer/>
                         <ButtonGroup variant="link" spacing="12">
@@ -59,8 +55,8 @@ import {
                         </ButtonGroup>
                     </Flex>
               ) : (
-                <Flex justify={'space-evenly'} mx={'40px'}>
-                    <ButtonGroup variant="link" spacing='15vw'>
+                <Flex justify={'space-evenly'} mx={'5vw'}>
+                    <ButtonGroup variant="link" spacing='10vw'>
                         <Button key='Home'>
                                 <Link to="/">
                                     Home
@@ -86,6 +82,5 @@ import {
 
               )}
         </Box>
-      </Box>
-    )
+    );
   }
