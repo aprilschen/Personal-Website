@@ -2,6 +2,9 @@ import { Box, Divider, Text } from "@chakra-ui/react"
 import { Flex } from "@chakra-ui/react";
 import { ButtonGroup, IconButton } from '@chakra-ui/react';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { MdContactPage } from "react-icons/md";
+import Resume from '../assets/shiwei_chen_resume.pdf'
+
 function Hero() {
     return (
         <Box
@@ -39,6 +42,15 @@ function Hero() {
                         <IconButton
                         mx={5}
                         colorScheme= 'purple'
+                        as="a"
+                        href={Resume}
+                        target={"_blank"}
+                        aria-label="Resume"
+                        icon={<MdContactPage fontSize="1.25rem" />} />
+
+                        <IconButton
+                        mx={5}
+                        colorScheme= 'green'
                         as="a"
                         href="https://github.com/aprilschen"
                         target={"_blank"}

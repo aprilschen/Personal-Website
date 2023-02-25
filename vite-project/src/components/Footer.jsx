@@ -3,7 +3,9 @@ import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { Box } from '@chakra-ui/react';
 import Photo from '../assets/icon.png';
 import { Flex } from '@chakra-ui/react';
-import { Card, CardBody,  } from '@chakra-ui/react'
+import { Card, CardBody,  } from '@chakra-ui/react';
+import { MdContactPage } from 'react-icons/md';
+import Resume from '../assets/shiwei_chen_resume.pdf';
 
 import { Divider } from '@chakra-ui/react';
 
@@ -25,6 +27,13 @@ export default function Footer() {
                         aria-label="LinkedIn"
                         icon={<FaLinkedin fontSize="1.25rem" />}
                         />
+
+                        <IconButton
+                        as="a"
+                        href={Resume}
+                        target={"_blank"}
+                        aria-label="Resume"
+                        icon={<MdContactPage fontSize="1.25rem" />} />
 
                         <IconButton 
                         as="a" 

@@ -16,7 +16,7 @@ export default function About() {
         </Heading>
         <Text pb="10px">
             My name is Shiwei (I also go by April). I'm a Full-Stack software developer, based in Cupertino, California. 
-            I teach web development and general programming at <a style={{textDecoration: 'underline'}}href="https://baycodingclub.com/website-designer-and-developer/" target={"_blank"}>
+            I currently teach web development and general programming at <a style={{textDecoration: 'underline'}}href="https://baycodingclub.com/website-designer-and-developer/" target={"_blank"}>
                 Bay Coding Club</a> and coach students for competitive programming contests on my own.
         </Text>
 

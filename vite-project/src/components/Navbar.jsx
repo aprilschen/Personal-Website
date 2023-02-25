@@ -24,8 +24,8 @@ import {
         <Box boxShadow="md"
             minWidth={'100vw'}
             bg={"brand.100"}
-            style={{position: 'fixed'}}
-            pt={'4'} pb={2}
+            style={{position: 'fixed', zIndex: 9000}}
+            pt={4} pb={3}
             px={'10'}>
               {isDesktop ? (
                     <Flex >
@@ -56,7 +56,7 @@ import {
                     </Flex>
               ) : (
                 <Flex justify={'space-evenly'}>
-                    <ButtonGroup variant='outline' spacing='5vw'>
+                    <ButtonGroup spacing='5vw'>
                             <Button colorScheme= 'blue' key='Home'>
                                 <Link to="/">
                                     Home
