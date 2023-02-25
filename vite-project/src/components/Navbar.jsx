@@ -25,29 +25,29 @@ import {
             minWidth={'100vw'}
             bg={"brand.100"}
             style={{position: 'fixed'}}
-            py={'3'}
+            pt={'4'} pb={2}
             px={'10'}>
               {isDesktop ? (
                     <Flex >
                         <img src={Photo} width='50px'/>
                         <Spacer/>
-                        <ButtonGroup variant="link" spacing="12">
-                            <Button key='Home'>
+                        <ButtonGroup  spacing="12" mt={1}>
+                        <Button colorScheme= 'blue' key='Home'>
                                 <Link to="/">
                                     Home
                                 </Link>
                                 </Button>
-                            <Button key='About'>
+                            <Button colorScheme= 'purple' key='About'>
                                 <Link to="/about">
                                     About
                                 </Link>
                                 </Button>
-                            <Button key='Portfolio'>
+                            <Button colorScheme= 'green' key='Portfolio'>
                                 <Link to="/portfolio">
                                     Portfolio
                                 </Link>
                             </Button>
-                            <Button key='Contact'>
+                            <Button colorScheme= 'pink' key='Contact'>
                                 <Link to="/contact">
                                     Contact
                                 </Link>
@@ -55,24 +55,24 @@ import {
                         </ButtonGroup>
                     </Flex>
               ) : (
-                <Flex justify={'space-evenly'} mx={'5vw'}>
-                    <ButtonGroup variant="link" spacing='10vw'>
-                        <Button key='Home'>
+                <Flex justify={'space-evenly'}>
+                    <ButtonGroup variant='outline' spacing='5vw'>
+                            <Button colorScheme= 'blue' key='Home'>
                                 <Link to="/">
                                     Home
                                 </Link>
                                 </Button>
-                            <Button key='About'>
+                            <Button colorScheme= 'purple' key='About'>
                                 <Link to="/about">
                                     About
                                 </Link>
                                 </Button>
-                            <Button key='Portfolio'>
+                            <Button colorScheme= 'green' key='Portfolio'>
                                 <Link to="/portfolio">
                                     Portfolio
                                 </Link>
                             </Button>
-                            <Button key='Contact'>
+                            <Button colorScheme= 'pink' key='Contact'>
                                 <Link to="/contact">
                                     Contact
                                 </Link>
