@@ -1,11 +1,13 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 
 export default function LittleLemon() {
     return (
-        <Box
-        minHeight={'100vh'}
-        >
-          LittleLemon
-        </Box>
+      <Box
+      p="40px"
+      pt={'10vh'}
+      minHeight={'100vh'}
+    >
+      <Text>Little Lemon</Text>
+    </Box>
     );
 }

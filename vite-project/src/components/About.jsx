@@ -22,7 +22,7 @@ export default function About() {
 
         <Text 
         pb="10px" fontSize={20} >
-            I'm broadly interested in full-stack web development, algorithms, UI/UX design, devops, and distributed systems.
+            I'm interested in full-stack web development, UI/UX design, devops, and distributed systems.
         </Text>
       </Box>
 
