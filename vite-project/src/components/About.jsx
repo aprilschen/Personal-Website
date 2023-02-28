@@ -11,26 +11,26 @@ export default function About() {
       justifyContent="space-between"
     >
       <Box>
-        <Heading color="blue.900" fontSize={28} letterSpacing="1px" pb="16px">
+        <Heading color="blue.900" fontSize={40} letterSpacing="1px" pb="3vh">
           Welcome to my site!
         </Heading>
-        <Text pb="10px">
+        <Text pb="10px" fontSize={20} >
             My name is Shiwei (I also go by April). I'm a Full-Stack software developer, based in Cupertino, California. 
             I currently teach web development and general programming at <a style={{textDecoration: 'underline'}}href="https://baycodingclub.com/website-designer-and-developer/" target={"_blank"}>
                 Bay Coding Club</a> and coach students for competitive programming contests on my own.
         </Text>
 
         <Text 
-        pb="20px">
-            I'm broadly interested in web development, algorithms, UI/UX design, devops, and distributed systems.
+        pb="10px" fontSize={20} >
+            I'm broadly interested in full-stack web development, algorithms, UI/UX design, devops, and distributed systems.
         </Text>
       </Box>
 
-      <Link color="blue.800">
-        <OneTimeLink to='/about'>
-            Learn more
+      <Link color="blue.800" fontSize={20} >
+        <OneTimeLink to='/about' >
+            Learn more about me
         </OneTimeLink>
-        <Icon as={FiArrowUpRight} ml="10px" h={5} w={5} />
+        <Icon as={FiArrowUpRight} ml="8px" h={5} w={5} />
       </Link>
     </Flex>
   );

@@ -12,27 +12,38 @@ export default function AboutPage() {
         minHeight={'100vh'}
       >
         <Box>
-          <Heading color="blue.900" fontSize={28} letterSpacing="1px" pb="16px">
-            Welcome to my site!
+          <Heading color="blue.900" fontSize={40} letterSpacing="1px" py="3vh">
+            About me
           </Heading>
-          <Text pb="10px">
-              My name is Shiwei (I also go by April). I'm a Full-Stack software developer, based in Cupertino, California. 
-              I teach web development and general programming at <a style={{textDecoration: 'underline'}}href="https://baycodingclub.com/website-designer-and-developer/" target={"_blank"}>
-                  Bay Coding Club</a> and coach students for competitive programming contests on my own.
+          <Text fontSize={20} pb="15px">
+              My name is Shiwei (I also go by April). I'm a Full-Stack software developer based in Cupertino, California. 
+              I work as a programming instructor teaching web development at <a style={{textDecoration: 'underline'}}href="https://baycodingclub.com/website-designer-and-developer/" target={"_blank"}>
+                  Bay Coding Club</a>, but also coach students for programming contests on my own.
           </Text>
-  
-          <Text 
-          pb="20px">
-              I'm broadly interested in web development, algorithms, UI/UX design, devops, and distributed systems.
+
+          <Text fontSize={20} pb="15px">
+              I've been building programs and games since I was young, and I've always enjoyed building 
+              interesting software with real world applications. 
+              A few years ago, I decided that I wanted to work full time as a software engineer. 
+              I've been attending hackathons, building projects & cool apps, and competing in programming contests 
+              ever since.
           </Text>
-        </Box>
-  
-        <Link color="blue.800">
-          <OneTimeLink to='/about'>
-              Learn more
-          </OneTimeLink>
-          <Icon as={FiArrowUpRight} ml="10px" h={5} w={5} />
-        </Link>
+
+          <Text fontSize={20} pb="15px">
+          I'm primarily interested in full-stack development, UI/UX design, and devops, but am open to experimenting
+          with technologies and fields new to me. I also enjoy taking part-time Computer Science classes at De Anza College to supplement my 
+          skills & experience.
+          You can check out the projects I've made <OneTimeLink to='/portfolio' style={{textDecoration: 'underline'}}>here</OneTimeLink>.
+          </Text>
+
+          <Text fontSize={20} pb="15px">
+            ...But I still have normal passions! When I'm not working or building web apps, 
+            I enjoy taking my two pet Shibas on a walk, attending cosplay conventions, 
+            and playing cello at my local amateur orchestra.
+            Please, consider following my dogs' <a style={{textDecoration: 'underline'}}href="https://www.instagram.com/alanspups/" target={"_blank"}>
+              Instagram page</a>!
+          </Text>
+          </Box>
       </Flex>
     );
 }
