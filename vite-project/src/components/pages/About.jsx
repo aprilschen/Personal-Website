@@ -37,10 +37,14 @@ export default function AboutPage() {
           </Text>
 
           <Text fontSize={20} pb="15px">
-            ...But I still have normal passions! When I'm not working or building web apps, 
+            ...But I'm an interesting person, I sw-w--wear! (˚ ˃̣̣̥⌓˂̣̣̥ ) 
+          </Text>
+
+          <Text fontSize={20} pb="15px">
+            When I'm not working or building web apps, 
             I enjoy taking my two pet Shibas on a walk, attending cosplay conventions, 
             and playing cello at my local amateur orchestra.
-            Please, consider following my dogs' <a style={{textDecoration: 'underline'}}href="https://www.instagram.com/alanspups/" target={"_blank"}>
+            Please, consider following my dogs, Mugi and Tino's <a style={{textDecoration: 'underline'}}href="https://www.instagram.com/alanspups/" target={"_blank"}>
               Instagram page</a>!
           </Text>
           </Box>
